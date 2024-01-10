@@ -10,20 +10,23 @@ This project is a FastAPI application designed to interact with the Hunter.io AP
  - Asynchronous request handling
 
 ## Installation
-Install this package using `pip`:
+This project uses Poetry for dependency management. To set up the project, follow these steps:
 
+1. Clone the repository:
 ```bash
-pip install email_verification_task_ForagerAI
+git clone https://github.com/alexsproject/email-verification.git
+cd pythonProject
 ```
-Or install using poetry:
+2. Install dependencies using Poetry:
 ```bash
-poetry add email_verification_task_ForagerAI
+poetry install
 ```
 ## Usage
-After installation, you can use it like this:
+To run the FastAPI server:
 ```bash
-import email_verification_task_ForagerAI
+poetry run python3 -m main
 ```
+This command will start the FastAPI application with hot-reload enabled.
 
 ## API Endpoints
  - POST /verify-email: Verifies the email address.
